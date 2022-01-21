@@ -5,3 +5,10 @@ How To Use
 **pip install -r requirments.txt**
 Then
 **py main.py**
+
+ **FEATURES**
+ Card Gen
+ Phone Number Gen
+ Email Gen
+ Ip Pinger
+ Ip Geolcation
