@@ -16,9 +16,10 @@ system(f'title FreeMoneyHubs Multi Tool')
 print(f"{Fore.RED}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄")
 print("▐                                         FreeMoneyHubs Multi Tool                                           ▐")
 print("▐                                         ------------------------                                           ▐")
-print("▐   1 = Card Gen   2 = Email Gen                                                                             ▐")
 print("▐                                                                                                            ▐")
-print("▐   3 = Ip Pinger  4 = Ip Analyzer                                                                           ▐")
+print("▐   1 = Card Gen   2 = Email Gen   5 = Phone Gen                                                             ▐")
+print("▐                                                                                                            ▐")
+print("▐   3 = Ip Pinger   4 = Ip Analyzer                                                                          ▐")
 print("▐                                                                                                            ▐")
 print("▐                                                                                                            ▐")
 print("▐                                                                                                            ▐")
@@ -56,10 +57,10 @@ if menu3 == '1':
         with open(f"Cards{num}.txt") as filebb:
             for line in file.readlines():
                 carddie = line.strip("\n")
-                print("[!] Finished")
+                print(f"{Fore.GREEN}{Style.BRIGHT}[!] Finished{Style.RESET_ALL}")
 
 elif menu3 == '2':
-    baiduj = input('[?] How Mail Emails To Make : ')
+    baiduj = input(f'{Fore.LIGHTBLUE_EX}[?] How Mail Emails To Make : ')
     with open(f"Emails{baiduj}.txt", "w", encoding='utf-8') as fileffs:
         jdjdjd = (['justin', 'james', 'juan', 'lopez', 'matt', 'bryan', 'tina', 'mark', 'mason', 'brass', 'jeff', 'caleb',
          'marten', 'willson', 'pro', 'old', 'oscar', 'asher', 'gaming', 'davis', 'noah', 'seth', 'trent', 'luke',
@@ -71,15 +72,15 @@ elif menu3 == '2':
             partt0 = randrange(1, 999)
             partt1 = (random.choice(jdjdjd))
             partt2 = (random.choice(bbsi))
-            print(f'({i}) - {partt1}{partt0}{partt2}')
+            print(f'{Fore.GREEN}{Style.BRIGHT}({i}) - {partt1}{partt0}{partt2}{Style.RESET_ALL}')
             fileffs.write(f"{partt1}{partt0}{partt2} \n")
         with open(f"mails{baiduj}.txt") as filebb:
             for line in file.readlines():
                 emaildie = line.strip("\n")
-                print("[!] Finished")
+                print(f"{Fore.GREEN}{Style.BRIGHT}[!] Finished{Style.RESET_ALL}")
 elif menu3 == '3':
-    ippp = input("[?] Enter Ip To Ping : ")
-    ammo3unt = input("[?] Amount Of Times To Ping : ")
+    ippp = input(f"{Fore.LIGHTBLUE_EX}[?] Enter Ip To Ping : ")
+    ammo3unt = input(f"{Fore.LIGHTBLUE_EX}[?] Amount Of Times To Ping : ")
     nummies = int(ammo3unt)
     try:
         ping(f'{ippp}', count=nummies, verbose=True)
@@ -88,11 +89,43 @@ elif menu3 == '3':
     except:
         print(f"{Fore.RED}{Style.BRIGHT}[!] That Ip Is Not Possible To Even Have Retard{Style.RESET_ALL}")
 elif menu3 == '4':
-    aufsaifs = input("[?] Enter The Ip You Want To Get Info On : ")
+    aufsaifs = input(f"{Fore.LIGHTBLUE_EX}[?] Enter The Ip You Want To Get Info On : ")
     daaataaa = requests.get(f"http://ip-api.com/json/{aufsaifs}")
     if daaataaa.status_code == 200:
             boobaas = curl = daaataaa.json()
             print(boobaas)
+elif menu3 == '5':
+    phonee = input(f"{Fore.LIGHTBLUE_EX}[?] How Many Numbers To Generate : ")
+    print(f"[!]{Fore.RED}  WE ONLY HAVE 250 REQ PER MONTH PER API KEY SO DONT FUCKING AFK THIS SHIT BRO")
+    time.sleep(1)
+    phonee2 = int(phonee)
+    with open(f"PhoneNums{phonee2}.txt", "w", encoding='utf-8') as ggas:
+        for i in range(phonee2):
+            kyyee = random.choice(['8a9b286db37242278c650f057e69af0a','c18e40093aa54050869e6c025cd212ad','ce7e22fa1b664e30b7479c2fae835b6e','65fb967dd10d4dfdae57aac38359b784','4ef2dc40a978468fa34d3148fa5edea2','57e32fc3db4a43f8bb1a8789530e47e2','7dca8166ab2c4dac8fe6f92b4cbd6d07','fcdad5e099284c5b8e87a92a1ea799b8','a73831d44e694faaac2f2700cf477200','7da18e005724444fbc5c663b5f936bae','39d2d11cc1dc4e43a0f6d2851365fc74','1040025afab84d3fb0a54b03dc05e973','e366c837dfff41b6a929ea9c5dc39f39','e1cbb145d55c47beb794d53e0ecfd0e5','9349b70a50f94a08b33622c794f0133b','2baaaa8e8eab4a08aeea4fad3c5022eb','7c1e7070816f40a68f43c96a098e6247'])
+            areacodde = randrange(200, 999)
+            telprefix = randrange(200, 999)
+            linenumm = randrange(1000, 9999)
+            sexa2 = print(f"{Fore.LIGHTGREEN_EX}({i}) Genned : 1-{areacodde}-{telprefix}-{linenumm}")
+            sexa4 = (f" 1-{areacodde}-{telprefix}-{linenumm}")
+            sexa3main = f"1{areacodde}{telprefix}{linenumm}"
+            response = requests.get(f"https://phonevalidation.abstractapi.com/v1/?api_key={kyyee}&phone={sexa3main}")
+            if response.status_code == 200:
+                ggas.write(f"{sexa4}   -   {response.content} \n")
+                print(f"{Fore.GREEN}Response For {sexa3main} - {response.content}")
+
+            else:
+                print(f"{Fore.RED}{Style.BRIGHT}[!] 404 NIGGA THIS API KEY GOT FUCKED WAIT 1 MONTH{Style.RESET_ALL}")
+
+
+
+
+
+
+
+
+
+
+
 
 
 
