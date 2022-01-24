@@ -12,3 +12,5 @@ Then
  Email Gen,
  Ip Pinger,
  Ip Geolcation,
+ Base64 Encode / Decode,
+ NitroGen
