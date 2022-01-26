@@ -21,13 +21,13 @@ print(f"{Fore.RED}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄�
 print("▐                                         FreeMoneyHubs Multi Tool                                           ▐")
 print("▐                                         ------------------------                                           ▐")
 print("▐                                                                                                            ▐")
-print("▐   1 = Card Gen   2 = Email Gen   5 = Phone Gen   7 = Nitro Gen                                             ▐")
+print("▐   1 = Card Gen   2 = Email Gen   5 = Phone Gen   7 = Nitro Gen   12 = Combo Gen                            ▐")
 print("▐                                                                                                            ▐")
 print("▐   3 = Ip Pinger   4 = Ip Analyzer                                                                          ▐")
 print("▐                                                                                                            ▐")
-print("▐   6 = Discord Spammer                                                                                      ▐")
+print("▐   6 = Discord Spammer   10 = Webhook Spammer                                                               ▐")
 print("▐                                                                                                            ▐")
-print("▐   8 = Base64 Encoder   9 = Base64 Decoder                                                                  ▐")
+print("▐   8 = Base64 Encoder   9 = Base64 Decoder   11 = Morpheus                                                  ▐")
 print("▐                                                                                                            ▐")
 print("▐                                                                                                            ▐")
 print("▐                                                                                                            ▐")
@@ -68,7 +68,7 @@ elif menu3 == '2':
     with open(f"Emails{baiduj}.txt", "w", encoding='utf-8') as fileffs:
         jdjdjd = (['justin', 'james', 'juan', 'lopez', 'matt', 'bryan', 'tina', 'mark', 'mason', 'brass', 'jeff', 'caleb',
          'marten', 'willson', 'pro', 'old', 'oscar', 'asher', 'gaming', 'davis', 'noah', 'seth', 'trent', 'luke',
-         'carson', 'ella', 'brook', 'tate', 'brice', 'collin', 'ryan','jamie','mega','ted','steve','joe','copper'])
+         'carson', 'ella', 'brook', 'tate', 'brice', 'collin', 'ryan','jamie','mega','ted','steve','joe','copper','coder'])
         bbsi = (['@gmail.com', '@yahoo.com', '@hotmail.com'])
         inny23 = int(baiduj)
         time.sleep(.5)
@@ -163,6 +163,55 @@ elif menu3 == '9':
     sample_string_bytes = base64.b64decode(base64_bytes)
     sample_string = sample_string_bytes.decode("ascii")
     print(f"{Fore.GREEN}Decrypted Message : {sample_string}")
+elif menu3 == '10':
+    webhookurl = input(f'[?] Enter The Webhook Url : ')
+    messah48 = input(f"[?] Enter The Message To Spam : ")
+    sdashdd = input(f"[?] Name Of The Webhook : ")
+    sadhjsdjasd = input(f"[?] How Many Times To Spam Webhook : ")
+    ballsxd = int(sadhjsdjasd)
+    jamiee = input('[?] Add Hentai y/n : ')
+    ballsxdxxd3 = (['https://nekos.life/api/v2/img/boobs','https://nekos.life/api/v2/img/pussy'])
+    if jamiee == "y":
+        for i in range(ballsxd):
+            chumly = random.choice(ballsxdxxd3)
+            res = requests.get(f"{chumly}")
+            if res.status_code == 200:
+                boobs = curl = res.json()["url"]
+                sexxdded = f"{messah48} - {boobs}"
+                dataaa = requests.post(webhookurl, json={"content": str(sexxdded), "name": str(sdashdd), "avatar_url": "https://cdn.discordapp.com/attachments/933540730083872889/935019209652596736/01d8Ghah.jpg"})
+                print(f"{i}  Message Sent")
+    elif jamiee == "n":
+        for i in range(ballsxd):
+            dataaa = requests.post(webhookurl, json={"content": str(messah48), "name": str(sdashdd), "avatar_url": "https://cdn.discordapp.com/attachments/933540730083872889/935019209652596736/01d8Ghah.jpg"})
+            print(f"{i}  Message Sent")
+elif menu3 == '11':
+    niggaaa = "9999999999999999999999"
+    jameeisxz = int(niggaaa)
+    for i in range(jameeisxz):
+        cood43 = "".join(random.choice("1 2 3 4 5 6 7 8 9 0 ") for _ in range(500))
+        time.sleep(.005)
+        print(f'{Fore.GREEN} {cood43}')
+elif menu3 == '12':
+    whooo = "@yahoo.com"
+    jamz840 = input("[?] How Many Combos Do You Want To Make : ")
+    nummiesss = int(jamz840)
+    maof = (['cooper','feet','gaminqs','ricebb','mattie','homies','fortnite','email','main','bikes','Douglas','Zachary','Peter','Kyle','george','shroud','reactor','Walter','Ethan','Jeremy','Harold','Keith','Beast','Baloon','rich','roddy','apple','bear','hecktor','pines','schools','mapping','awesome','bird','purple','magical','gaming','trappa','monster','creative','youtube','OMFG','spire','chip','Jailed','tick','mathew','Micc','house','Fighter','jet','santos','crypto','kitten','rapper','Swan'])
+    with open(f"Combos{jamz840}.txt", "w", encoding='utf-8') as fileffs:
+        for i in range(nummiesss):
+            hguoo = random.choice(maof)
+            gamer3 = (random.randint(0, 5))
+            gamer21 = (random.randint(8, 16))
+            gamer2 = (random.randint(0, 2))
+            cood43 = "".join(random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890") for _ in range(gamer3))
+            cood433 = "".join(random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890") for _ in range(gamer2))
+            cood4333 = "".join(random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890") for _ in range(gamer21))
+            print(f"{cood433}{hguoo}{cood43}{whooo}:{cood4333}")
+            fileffs.write(f"{cood433}{hguoo}{cood43}{whooo}:{cood4333}\n")
+
+
+
+
+
 
 
 
