@@ -13,4 +13,6 @@ Then
  Ip Pinger,
  Ip Geolcation,
  Base64 Encode / Decode,
- NitroGen
+ NitroGen,
+ Combo Gen,
+ Morphius
