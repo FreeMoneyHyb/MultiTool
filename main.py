@@ -16,20 +16,23 @@ from pythonping import ping
 from discord.ext import commands
 
 
-system(f'title FreeMoneyHubs Multi Tool')
+
+
+
+system(f'title FreeMoneyHubs Multi Tool V 1.1.2')
 print(f"{Fore.RED}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄")
 print("▐                                         FreeMoneyHubs Multi Tool                                           ▐")
 print("▐                                         ------------------------                                           ▐")
 print("▐                                                                                                            ▐")
 print("▐   1 = Card Gen   2 = Email Gen   5 = Phone Gen   7 = Nitro Gen   12 = Combo Gen                            ▐")
 print("▐                                                                                                            ▐")
-print("▐   3 = Ip Pinger   4 = Ip Analyzer                                                                          ▐")
+print("▐   3 = Ip Pinger   4 = Ip Analyzer   13 = Domain Check  14 = Email Check                                    ▐")
 print("▐                                                                                                            ▐")
 print("▐   6 = Discord Spammer   10 = Webhook Spammer                                                               ▐")
 print("▐                                                                                                            ▐")
-print("▐   8 = Base64 Encoder   9 = Base64 Decoder   11 = Morpheus                                                  ▐")
+print("▐   8 = Base64 Encoder   9 = Base64 Decoder                                                                  ▐")
 print("▐                                                                                                            ▐")
-print("▐                                                                                                            ▐")
+print("▐   11 = Morpheus  15 = FakeHack                                                                             ▐")
 print("▐                                                                                                            ▐")
 print(f"▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀{Style.RESET_ALL}")
 
@@ -179,21 +182,22 @@ elif menu3 == '10':
                 boobs = curl = res.json()["url"]
                 sexxdded = f"{messah48} - {boobs}"
                 dataaa = requests.post(webhookurl, json={"content": str(sexxdded), "name": str(sdashdd), "avatar_url": "https://cdn.discordapp.com/attachments/933540730083872889/935019209652596736/01d8Ghah.jpg"})
-                print(f"{i}  Message Sent")
+                print(f"{i} {Fore.GREEN} Message Sent")
     elif jamiee == "n":
         for i in range(ballsxd):
             dataaa = requests.post(webhookurl, json={"content": str(messah48), "name": str(sdashdd), "avatar_url": "https://cdn.discordapp.com/attachments/933540730083872889/935019209652596736/01d8Ghah.jpg"})
-            print(f"{i}  Message Sent")
+            print(f"{i} {Fore.GREEN} Message Sent")
 elif menu3 == '11':
-    niggaaa = "9999999999999999999999"
+    niggaaa = "999999999999999999999999"
     jameeisxz = int(niggaaa)
     for i in range(jameeisxz):
-        cood43 = "".join(random.choice("1 2 3 4 5 6 7 8 9 0 ") for _ in range(500))
+        fakehackermsg = random.choice(['Decrypting Firewall','Anlyzing ByteCode','Exploting Weakness','Attempting to brute force admin password','<HTTP HEADERS>','PACKAGE=JSON.FILE'])
+        cood43 = "".join(random.choice("1 2 3 4 5 6 7 8 9 0 ") for _ in range(4000))
         time.sleep(.005)
-        print(f'{Fore.GREEN} {cood43}')
+        print(f'{fakehackermsg} {Fore.GREEN}{cood43}')
 elif menu3 == '12':
     whooo = "@yahoo.com"
-    jamz840 = input("[?] How Many Combos Do You Want To Make : ")
+    jamz840 = input(f"{Fore.LIGHTCYAN_EX}[?] How Many Combos Do You Want To Make : ")
     nummiesss = int(jamz840)
     maof = (['cooper','feet','gaminqs','ricebb','mattie','homies','fortnite','email','main','bikes','Douglas','Zachary','Peter','Kyle','george','shroud','reactor','Walter','Ethan','Jeremy','Harold','Keith','Beast','Baloon','rich','roddy','apple','bear','hecktor','pines','schools','mapping','awesome','bird','purple','magical','gaming','trappa','monster','creative','youtube','OMFG','spire','chip','Jailed','tick','mathew','Micc','house','Fighter','jet','santos','crypto','kitten','rapper','Swan'])
     with open(f"Combos{jamz840}.txt", "w", encoding='utf-8') as fileffs:
@@ -205,8 +209,65 @@ elif menu3 == '12':
             cood43 = "".join(random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890") for _ in range(gamer3))
             cood433 = "".join(random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890") for _ in range(gamer2))
             cood4333 = "".join(random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890") for _ in range(gamer21))
-            print(f"{cood433}{hguoo}{cood43}{whooo}:{cood4333}")
+            print(f"{Fore.GREEN}{cood433}{hguoo}{cood43}{whooo}:{cood4333}")
             fileffs.write(f"{cood433}{hguoo}{cood43}{whooo}:{cood4333}\n")
+elif menu3 == '13':
+    domain = input(f"{Fore.LIGHTCYAN_EX}[?] What Domain Are You Trying To Check No HTTPS : ")
+    keys = random.choice(['nlAYxCOOPBWDueI8Wu2IH5YpXQPrsCS4','jy7R1EcNX9fz6yyip21PGobkcH1Gkamp'])
+    try:
+        url = f"https://api.promptapi.com/whois/check?domain={domain}"
+        payload = {}
+        headers = {
+            "apikey": f"{keys}"
+        }
+        response = requests.request("GET", url, headers=headers, data=payload)
+        status_code = response.status_code
+        result = response.text
+        print(f"{response} : {result} ")
+    except:
+        print(f"{Fore.RED}The Api Key Is Down Wait For A New Update Or Contact Me On Github")
+elif menu3 == '14':
+    key = random.choice(['FTFGFJi5QBMmcCn2yogGDXwye72NVVZY','KVPwoPgSR3HO8hrjnoHGv28AYAEFp7fI','QB3zT99JD1On6XBpPKU3EBntnNhT1kZ8'])
+    email = input(f{Fore.LIGHTCYAN_EX}'[?] Enter The Email You Want To Check : ')
+    print("Sending Request Please Wait")
+    url = f"https://api.promptapi.com/email_verification/{email}"
+    payload = {}
+    headers = {
+        "apikey": f"{key}"
+     }
+    response = requests.request("GET", url, headers=headers, data=payload)
+    status_code = response.status_code
+    result = response.text
+    print(f'{status_code} : {result}')
+elif menu3 == '15':
+    email = input(f'{Fore.LIGHTCYAN_EX}[?] Enter The Thingy You Want To Fake Hack : ')
+    balls = int("58588585858858558585858")
+    for i in range(balls):
+        gamer2212 = random.randint(5, 5000000000000000000)
+        responcealt = random.choice(['Packet Error','Host Not Responding',f'Frame Error ID : {gamer2212}','CloudFlare Error 400'])
+        responce = random.choice(['Invalid Login',f'Internal Error == {responcealt}'])
+        gamer221 = random.randint(5, 50)
+        cood4333 = "".join(random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890") for _ in range(gamer221))
+        time.sleep(.05)
+        print(f'{Fore.GREEN} ({i}) Hacking {Fore.LIGHTGREEN_EX}{email} : {Fore.YELLOW}{cood4333}  {Fore.RED}{responce}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
