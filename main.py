@@ -20,21 +20,25 @@ from discord.ext import commands
 
 
 system(f'title FreeMoneyHubs Multi Tool V 1.1.2')
-print(f"{Fore.RED}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄")
-print("▐                                         FreeMoneyHubs Multi Tool                                           ▐")
-print("▐                                         ------------------------                                           ▐")
-print("▐                                                                                                            ▐")
-print("▐   1 = Card Gen   2 = Email Gen   5 = Phone Gen   7 = Nitro Gen   12 = Combo Gen                            ▐")
-print("▐                                                                                                            ▐")
-print("▐   3 = Ip Pinger   4 = Ip Analyzer   13 = Domain Check  14 = Email Check                                    ▐")
-print("▐                                                                                                            ▐")
-print("▐   6 = Discord Spammer   10 = Webhook Spammer                                                               ▐")
-print("▐                                                                                                            ▐")
-print("▐   8 = Base64 Encoder   9 = Base64 Decoder                                                                  ▐")
-print("▐                                                                                                            ▐")
-print("▐   11 = Morpheus  15 = FakeHack                                                                             ▐")
-print("▐                                                                                                            ▐")
-print(f"▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀{Style.RESET_ALL}")
+print(f'''
+{Fore.RED}▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+▐                                         FreeMoneyHubs Multi Tool                                           ▐
+▐                                         ------------------------                                           ▐
+▐                                                                                                            ▐
+▐   1 = Card Gen   2 = Email Gen   5 = Phone Gen   7 = Nitro Gen   12 = Combo Gen   17 = Proxy Gen           ▐
+▐                                                                                                            ▐
+▐   3 = Ip Pinger   4 = Ip Analyzer   13 = Domain Check  14 = Email Check  18 = Discord Token Checker        ▐
+▐                                                                                                            ▐
+▐   6 = Discord Spammer   10 = Webhook Spammer  16 = Sms Sender                                              ▐
+▐                                                                                                            ▐
+▐   8 = Base64 Encoder   9 = Base64 Decoder                                                                  ▐
+▐                                                                                                            ▐
+▐   11 = Morpheus  15 = FakeHack                                                                             ▐
+▐                                                                                                            ▐
+▐                                                                                                            ▐
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀{Style.RESET_ALL}
+''')
+
 
 menu3 = input(f"{Fore.LIGHTBLUE_EX}[?] : {Style.RESET_ALL}")
 if menu3 == '1':
@@ -228,7 +232,7 @@ elif menu3 == '13':
         print(f"{Fore.RED}The Api Key Is Down Wait For A New Update Or Contact Me On Github")
 elif menu3 == '14':
     key = random.choice(['FTFGFJi5QBMmcCn2yogGDXwye72NVVZY','KVPwoPgSR3HO8hrjnoHGv28AYAEFp7fI','QB3zT99JD1On6XBpPKU3EBntnNhT1kZ8'])
-    email = input(f{Fore.LIGHTCYAN_EX}'[?] Enter The Email You Want To Check : ')
+    email = input(f'{Fore.LIGHTCYAN_EX}[?] Enter The Email You Want To Check : ')
     print("Sending Request Please Wait")
     url = f"https://api.promptapi.com/email_verification/{email}"
     payload = {}
@@ -250,6 +254,70 @@ elif menu3 == '15':
         cood4333 = "".join(random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890") for _ in range(gamer221))
         time.sleep(.05)
         print(f'{Fore.GREEN} ({i}) Hacking {Fore.LIGHTGREEN_EX}{email} : {Fore.YELLOW}{cood4333}  {Fore.RED}{responce}')
+elif menu3 =='16':
+    james = input('[?] Enter The Phone Number Example - 12143275829 : ')
+    message = input('[?] Enter The Message You Want To Send : ')
+    resp = requests.post('https://textbelt.com/text', {
+        'phone': f'{james}',
+        'message': f'{message}',
+        'key': 'textbelt',
+    })
+    print(resp.json())
+elif menu3 =='17':
+    question1 = input('[?] Do You Want Fake Proxys y/n : ')
+    if question1 =='n':
+        huo = "55555555555555555555"
+        jamesad = int(huo)
+        print('Getting Proxys From Diffrent Apis')
+        egg = requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=3000&country=all&ssl=all&anonymity=all')
+        print(egg.text)
+        egg2 = requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=3000&country=all&ssl=all&anonymity=all')
+        print(egg2.text)
+        for i in range(jamesad):
+            keys = random.choice(['https://public.freeproxyapi.com/api/Proxy/Mini','http://pubproxy.com/api/proxy','https://gimmeproxy.com/api/getProxy',])
+            spaz = requests.get(f"{keys}")
+            print(spaz.json())
+    elif question1 =='y':
+        howmany = input('[?] How Many Proxys Do You Want To Generate : ')
+        thenum = int(howmany)
+        for i in range(thenum):
+            ports = random.choice(['80','443','8000','8080'])
+            sex = (random.randint(10, 250))
+            sex1 = (random.randint(1, 250))
+            sex2 = (random.randint(1, 250))
+            sex3 = (random.randint(1, 250))
+            print(f"{sex}.{sex1}.{sex2}.{sex3}:{ports}")
+elif menu3 =='18':
+    token = input('[?] Enter The Discord Token : ')
+    headers = {'Authorization': token, 'Content-Type': 'application/json'}
+    r = requests.get('https://discord.com/api/v8/users/@me', headers=headers)
+    if r.status_code == 200:
+        print(' - Token is valid - ')
+        userName = r.json()['username'] + '#' + r.json()['discriminator']
+        userID = r.json()['id']
+        phone = r.json()['phone']
+        email = r.json()['email']
+        mfa = r.json()['mfa_enabled']
+        verified = r.json()['verified']
+        bio = r.json()['bio']
+        print(f'''
+    User: {userName}
+    ID: {userID}
+    Phone: {phone}
+    Email: {email}
+    MFA: {mfa}
+    Verified: {verified}
+    Token: {token}
+    Bio: {bio}
+                ''')
+    else:
+        print('Invalid token')
+
+
+
+
+
+
 
 
 
