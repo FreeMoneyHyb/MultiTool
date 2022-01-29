@@ -1,4 +1,5 @@
 import random
+import json
 import time
 import base64
 import string
@@ -107,7 +108,7 @@ elif menu3 == '4':
             print(boobaas)
 elif menu3 == '5':
     phonee = input(f"{Fore.LIGHTBLUE_EX}[?] How Many Numbers To Generate : ")
-    print(f"[!]{Fore.RED}  WE ONLY HAVE 250 REQ PER MONTH PER API KEY SO DONT FUCKING AFK THIS SHIT BRO")
+    print(f"[!]{Fore.RED}  WE ONLY HAVE 250 REQ PER MONTH PER API KEY SO DONT AFK THIS STUFF BRO")
     time.sleep(1)
     phonee2 = int(phonee)
     with open(f"PhoneNums{phonee2}.txt", "w", encoding='utf-8') as ggas:
@@ -121,11 +122,16 @@ elif menu3 == '5':
             sexa3main = f"1{areacodde}{telprefix}{linenumm}"
             response = requests.get(f"https://phonevalidation.abstractapi.com/v1/?api_key={kyyee}&phone={sexa3main}")
             if response.status_code == 200:
-                ggas.write(f"{sexa4}   -   {response.content} \n")
+                jsonshit = json.loads(response.content)
+                if jsonshit['valid']:
+                    ggas.write(f"{sexa4}   -   {response.content} \n")
+                    print(f'{Fore.GREEN}valid Phone Number Logged')
+                else: 
+                    print(f'{Fore.RED} Invalid Phone Number')
                 print(f"{Fore.GREEN}Response For {sexa3main} - {response.content}")
 
             else:
-                print(f"{Fore.RED}{Style.BRIGHT}[!] 404 NIGGA THIS API KEY GOT FUCKED WAIT 1 MONTH{Style.RESET_ALL}")
+                print(f"{Fore.RED}{Style.BRIGHT}[!] 404 THIS API KEY DED WAIT 1 MONTH{Style.RESET_ALL}")
 elif menu3 == '6':
     tooooken = input(f"{Fore.LIGHTBLUE_EX}[?] Enter Discord Token : ")
     print(f'Using {tooooken}')
@@ -312,48 +318,3 @@ elif menu3 =='18':
                 ''')
     else:
         print('Invalid token')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
