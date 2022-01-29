@@ -123,7 +123,7 @@ elif menu3 == '5':
             response = requests.get(f"https://phonevalidation.abstractapi.com/v1/?api_key={kyyee}&phone={sexa3main}")
             if response.status_code == 200:
                 jsonshit = json.loads(response.content)
-                if jsonshit['valid'] = 'true':
+                if jsonshit['valid'] == True:
                     ggas.write(f"{sexa4}   -   {response.content} \n")
                     print(f'{Fore.GREEN}valid Phone Number Logged')
                 else: 
