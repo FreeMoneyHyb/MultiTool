@@ -131,7 +131,7 @@ elif menu3 == '5':
                 print(f"{Fore.GREEN}Response For {sexa3main} - {response.content}")
 
             else:
-                print(f"{Fore.RED}{Style.BRIGHT}[!] 404 THIS API KEY FUCKED WAIT 1 MONTH{Style.RESET_ALL}")
+                print(f"{Fore.RED}{Style.BRIGHT}[!] 404 NIGGA THIS API KEY GOT FUCKED WAIT 1 MONTH{Style.RESET_ALL}")
 elif menu3 == '6':
     tooooken = input(f"{Fore.LIGHTBLUE_EX}[?] Enter Discord Token : ")
     print(f'Using {tooooken}')
