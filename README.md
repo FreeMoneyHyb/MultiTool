@@ -5,4 +5,5 @@ How To Use
 **pip install -r requirments.txt**
 Then
 **py main.py**
+Project Update Soon
 
