@@ -1,4 +1,5 @@
 import random
+import json
 import time
 import base64
 import string
@@ -121,7 +122,12 @@ elif menu3 == '5':
             sexa3main = f"1{areacodde}{telprefix}{linenumm}"
             response = requests.get(f"https://phonevalidation.abstractapi.com/v1/?api_key={kyyee}&phone={sexa3main}")
             if response.status_code == 200:
-                ggas.write(f"{sexa4}   -   {response.content} \n")
+                jsonshit = json.loads(response.content)
+                if jsonshit['valid'] == True:
+                    ggas.write(f"{sexa4}   -   {response.content} \n")
+                    print(f'{Fore.GREEN}valid Phone Number Logged')
+                else: 
+                    print(f'{Fore.RED} Invalid Phone Number')
                 print(f"{Fore.GREEN}Response For {sexa3main} - {response.content}")
 
             else:
@@ -312,48 +318,3 @@ elif menu3 =='18':
                 ''')
     else:
         print('Invalid token')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
